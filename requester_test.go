@@ -1,4 +1,4 @@
-package requester
+package go_requester
 
 import (
 	"errors"

@@ -1,4 +1,4 @@
-package requester
+package go_requester
 
 import (
 	"bytes"
@@ -10,7 +10,7 @@ import (
 
 // ServiceInterface for that service
 type ServiceInterface interface {
-	Make(string, string, []byte, int, interface{}, bool) (error, []byte)
+	Make(string, string, interface{}, interface{}) (*Response, error)
 	SetAuthentication(string, string)
 }
 
