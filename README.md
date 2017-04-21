@@ -17,14 +17,14 @@ go get github.com/vladiacob/go_requester
 ```
 include (
     ..
-    pool "github.com/vladiacob/go_requester"
+    requester "github.com/vladiacob/go_requester"
     ..
 )
 ```
 
 ### Initialize requester
 ```
-requester := New(http.DefaultClient)
+requester := requester.New(http.DefaultClient)
 requester.SerUserAgent("test")
 ```
 
